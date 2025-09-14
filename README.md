@@ -33,7 +33,7 @@ Add the above commands to crontab
 0 * * * * du -sh /home/* > /var/log/disk_usage_du_hourly.log
 0 * * * * ps aux --sort=-%cpu | head -n 10 > /var/log/top_cpu_processes_hourly.log
 0 * * * * ps aux --sort=-%mem | head -n 10 > /var/log/top_mem_processes_hourly.log
-0 * * * *  => Run the command at minute 0 of every hour. So it triggers at 12:00, 1:00, 2:00, ..., all the way to 23:00.
+0 * * * *  => Run the command at minute 0 of every hour. So it triggers at 12:00, 1:00, 2:00, ..., all the way to 23:00
 
 Task 2: User Management and Access Control
 
